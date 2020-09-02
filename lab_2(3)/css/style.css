@@ -1,0 +1,54 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color:grey;
+    height: 60px;
+}
+#logo{
+    background-color:rgb(4, 56, 15);
+    color: white;
+    font-size:18px;
+    line-height: 60px;
+    width: 200px;
+    text-align: center;
+}
+#profile{
+    padding-top: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    position: relative;
+}
+#profile img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+#pofile .dropdown{
+    width: 100px;
+    position: absolute;
+    top:50px;
+    left:-70px;
+    display:none;
+    background-color:white;
+    box-shadow: 0 0 13px 0 rgb(0, 0, 0,0.3);
+    border:1px solid #e9ecef;
+    border-radius: 5px;
+}
+#profile:hover .dropdown{
+    display: block;
+}
+.dropdown a{
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 30px;
+    padding: 10px;
+    text-decoration: none;
+    columns: #333333;
+}
+.dropdown a:hover{
+    background-color:#f8f9fa;
+}
+.dropdown .logout{
+    color: #ec4561;
+}

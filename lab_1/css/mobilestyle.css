@@ -1,0 +1,21 @@
+@media only screen and (min-device-width:320px) and (max-device-width:480px){
+    h1{
+        font-size:60px;
+    }
+    nav{
+        height: inherit;
+    }
+    nav a{
+        display: block;
+        font-size:40px;
+    }
+    #article{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+    }
+    footer{
+        font-size:24px;
+    }
+}

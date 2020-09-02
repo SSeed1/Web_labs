@@ -13,8 +13,7 @@ header{
     text-align: center;
     background: rgb(2,0,36);
     background: radial-gradient(circle, rgba(2,0,36,1) 17%, rgba(5,5,24,1) 34%, rgba(0,2,4,1) 56%, rgba(56,3,79,1) 81%, rgba(6,71,84,1) 98%);
-    padding:20px;
-    
+    padding:20px; 
 }
 img{
     width: 150px;
@@ -32,7 +31,6 @@ h1{
       margin-left: 100%;
       width: 300%; 
     }
-  
     to {
       margin-left: 0%;
       width: 100%;
@@ -69,4 +67,98 @@ section{
 button{
     margin-top: 10px;
     font-size: 20px;
+    border-radius:4px;
 }
+nav a {
+    line-height: 55px;
+    border: 2px solid white;
+    color:white;
+    text-decoration: none;
+    padding:15px;
+    background-color​:​ ​rgba​(​255​,​ ​255​,​ ​255​,​ ​0.0​);
+
+}
+nav a:hover{
+    background-color​:​ ​rgba​(​255​,​ ​255​,​ ​255​,​ ​0.5);
+    transition: background 0.5s;
+    border-radius: 6px;
+    text-shadow : 2px 2px red ;
+    border: 2px solid blueviolet;
+}
+#article{
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-left: auto;
+    margin-right:auto;
+}
+article{
+    width: 400px;
+}
+article p{
+    padding: 30px;
+}
+section h2{
+    color: brown;
+    text-align: center;
+}
+.read-more{
+    background-color: cornflowerblue;
+    padding: 10px;
+    text-decoration: none;
+    color:black;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+.read-more:hover{
+    color: red;
+    transition: color 0.5s;
+    text-shadow : 0.5px 0.5px red;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.row label{
+    width: 50%;
+}
+form{
+    text-align: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+form button{
+    margin-top: 10px;
+}
+.form_search{
+    margin-bottom: 70px;
+}
+.bottom_search{
+    background-color: cornflowerblue;
+    text-shadow : 0.5px 0.5px red;
+}
+a.button10 {
+    display: inline-block;
+    color: black;
+    font-size: 100%;
+    font-weight: 500;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(130, 61, 240) linear-gradient(rgb(129, 8, 35), rgb(5, 56, 122));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+  } 
+  a.button10:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(98, 0, 255, 0.945);
+  }
+  a.button10:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgb(16, 90, 112);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+  }
