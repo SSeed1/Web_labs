@@ -1,11 +1,11 @@
 header{
     display: flex;
     justify-content: space-between;
-    background-color:grey;
+    background-color: rgba(35, 33, 39, 0.897);
     height: 60px;
 }
 #logo{
-    background-color:rgb(4, 56, 15);
+    background-color:rgba(20, 22, 31, 0.842);
     color: white;
     font-size:18px;
     line-height: 60px;
@@ -23,19 +23,20 @@ header{
     height: 36px;
     border-radius: 50%;
 }
-#pofile .dropdown{
+#profile .dropdown{
     width: 100px;
     position: absolute;
     top:50px;
     left:-70px;
-    display:none;
+    display: none;
     background-color:white;
-    box-shadow: 0 0 13px 0 rgb(0, 0, 0,0.3);
+    box-shadow: 0 0 13px 0 rgb(0, 0, 0, 0.3);
     border:1px solid #e9ecef;
     border-radius: 5px;
 }
 #profile:hover .dropdown{
     display: block;
+    
 }
 .dropdown a{
     display: block;
@@ -51,4 +52,73 @@ header{
 }
 .dropdown .logout{
     color: #ec4561;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+#main-container{
+    display: flex;
+    flex-grow:1
+}
+#left-menu{
+    width: 200px;
+    background-color: rgba(86, 107, 84, 0.822)
+}
+#content{
+    flex-grow:1;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#left-menu a{
+    display:block;
+    width: 180px;
+    padding-left: 20px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.993);
+    text-decoration: none;
+}
+#left-menu a:hover{
+    color: rgba(11, 165, 226, 0.932);
+    transition: color 0.5s;
+}
+.horizontal-bar-chart{
+    padding: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #5b626b;
+}
+.horizontal-bar-chart h5{
+    margin-top: 0px;
+}
+.horizontal-bar-chart .chart-row{
+    display:flex;
+    width: 500px;
+}
+.horizontal-bar-chart .chart-row .value{
+    width:50px;
+    line-height: 25px;
+}
+.horizontal-bar-chart .chart-row .bar{
+    background : repeating-linear-gradient ( to right , black , ba 1px , #fff 1px , #fff
+    50px );
+    padding-bottom: 3px;
+    flex-grow:1;
+}
+.horizontal-bar-chart .chart-row .bar span{
+    display: block;
+    background-color: #626ed4;
+    opacity: 0.8;
+    color:white;
+    line-height: 25px;
+    padding-left:20px;
+}
+.horizontal-bar-chart .chart-row{
+    animation-name: chart-animation;
+    animation-duration: 3s;
+}
+@keyframes chart-animation{
+    from{width: 200px;}
+    to{width: 500px;}
 }

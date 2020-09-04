@@ -1,0 +1,50 @@
+.vertical-bar-chart{
+    display: flex;
+    flex-direction:row;
+    border: 3px solid black;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: #5b626b;
+}
+.vertical-bar-chart h4{
+    margin-bottom: 0px;
+    display: block;
+}
+.vertical-bar-chart .chart-col{
+    display:flex;
+    flex-direction: column-reverse;
+    height: 500px;
+}
+.vertical-bar-chart .chart-col .value{
+    width: 50px;
+    line-height: 25px;
+    align-self:flex-end;
+}
+.vertical-bar-chart .chart-col .bar{
+    background-color: white;
+    background-image: linear-gradient(black 1px, transparent 1px);
+  background-size: 20px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    padding-right: 4px;
+}
+.vertical-bar-chart .chart-col .bar span{
+    display: inline-block;
+    background-color: #626ed4;
+    opacity: 0.9;
+    color:white;
+    line-height: 25px;
+    padding-left: 4px;
+    padding-right:4px ;
+}
+.vertical-bar-chart .chart-col{
+    animation-name: chart-animation;
+    animation-duration: 3s;
+}
+@keyframes chart-animation{
+    from{opacity: 0;}
+    to{opacity:1;}
+}
