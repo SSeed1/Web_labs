@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>New Post</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">Blog Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data- target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria- label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FeedBacks</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Vladislav Tanasiuk </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#"> Profile </a>
+                        <div class="dropdown-divider"></div>
+                        <a a class="dropdown-item text-danger" href="#"> Logout </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"> <a href="#">Home</a> </li>
+                <li class="breadcrumb-item"><a href="index.html">Posts</a></li>
+                <li class="breadcrumb-item active" aria-current="page">New Post</li>
+            </ol>
+        </nav>
+        <form>
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Text</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPassword3" class="col-sm-2 col-form-label">Language</label>
+                <div class="col-sm-10">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>English</option>
+                        <option value="1">Russian</option>
+                        <option value="2">Ukrainian</option>
+                        <option value="3">Spanish</option>
+                      </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                </div>
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                    aria-describedby="inputGroupFileAddon01">
+                  <label class="custom-file-label" for="inputGroupFile01">Choose Image</label>
+                </div>
+              </div>
+
+            <fieldset class="form-group">
+                <div class="row">
+                    <legend class="col-form-label col-sm-2 pt-0">Category</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Science
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
+                                value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Poetry
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
+                                value="option3">
+                            <label class="form-check-label" for="gridRadios3">
+                                ART
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="col-sm-2">Checkbox</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Example checkbox
+                        </label>
+                    </div>
+                </div>
+            </>
+            <div class="form-group row">
+                <div class="col-sm-1">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

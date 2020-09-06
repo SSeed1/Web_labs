@@ -54,6 +54,8 @@ article{
 footer{
 text-align: center;
 height: 20px;
+color:black;
+background-color:rgba(10, 14, 230, 0.87);
 }
 a:hover{
     text-decoration: underline ;
@@ -75,11 +77,11 @@ nav a {
     color:white;
     text-decoration: none;
     padding:15px;
-    background-color​:​ ​rgba​(​255​,​ ​255​,​ ​255​,​ ​0.0​);
+    background-color:​ ​rgba(​255​,​ ​255​,​ ​255​,​ ​0.0​);
 
 }
 nav a:hover{
-    background-color​:​ ​rgba​(​255​,​ ​255​,​ ​255​,​ ​0.5);
+    background-color​:​ ​rgba(​255​,​ ​255​,​ ​255​,​ ​0.5);
     transition: background 0.5s;
     border-radius: 6px;
     text-shadow : 2px 2px red ;
@@ -104,7 +106,7 @@ section h2{
 }
 .read-more{
     background-color: cornflowerblue;
-    padding: 10px;
+    padding: 8px;
     text-decoration: none;
     color:black;
     border-radius: 10px;
