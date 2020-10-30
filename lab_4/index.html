@@ -33,7 +33,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#"> Profile </a>
                         <div class="dropdown-divider"></div>
-                        <a a class="dropdown-item text-danger" href="#"> Logout </a>
+                        <a a class="dropdown-item text-danger" href="logout.html"> Logout </a>
                     </div>
                 </li>
             </ul>
@@ -47,50 +47,26 @@
                 <li class="breadcrumb-item"><a href="new_post.html"> New Post</a></li>
             </ol>
         </nav>
+        <div class="form-group row">
+            <label for="inputSortby" class="col-sm-2 col-form-label">Sort By</label>
+            <div class="col-sm-10">
+                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                    <option selected>Id</option>
+                    <option value="1">Title</option>
+                    <option value="2">Create Date</option>
+                </select>
+            </div>
+        </div>
+        <button class = "btn btn-primary mb-2 float-right" id = "sort-button"> Sort </button>
         <table class="table table-striped">
             <thead class="thead-dark">
                 <tr>
                     <th class="scope">#</th>
                     <th class="scope">Title</th>
                     <th class="scope">Created At</th>
-                    <th class="scope">Actions</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Docker for Rails</td>
-                    <td>2020-09-06</td>
-                    <td>
-                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                        <button type="button" class="btn btn-danger" data-toggle = "modal" data-target = "#exampleModal">
-                            Delete
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>HTML5 for Beginers</td>
-                    <td>2020-09-03</td>
-                    <td>
-                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                        <button type="button" class="btn btn-danger" data-toggle = "modal" data-target = "#exampleModal">
-                            Delete
-                        </button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>CSS3 for dummies</td>
-                    <td>2020-09-02</td>
-                    <td>
-                        <button type="button" class="btn btn-primary btn-sm">Edit</button>
-                        <button type="button" class="btn btn-danger" data-toggle = "modal" data-target = "#exampleModal">
-                            Delete
-                        </button>
-                    </td>
-
-                </tr>
+            <tbody id="posts">
             </tbody>
         </table>
         <a href="new_post.html" class="btn btn-success mb-2 float-right"> New Post </a>
@@ -129,6 +105,7 @@
     </div>
     <script src="jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/post.js"></script>
 </body>
 
 </html>
