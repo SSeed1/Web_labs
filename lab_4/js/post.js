@@ -32,14 +32,37 @@ let posts = [
          $('#posts').html(rowsHtml)
      }
      createPostsRows(posts)
-     $('#sort-button').click(function(event){
-         posts=posts.sort(function(a,b){
-             if(a['title']>b['title']){
-                 return 1
-             }
-             else{
-                 return -1
-             }
+
+    $('#sort-button').click(function(event){
+    if($('#SortingValue').val()=='id'){
+         SortById(posts)
+    }
+    if($('#SortingValue').val()=='title'){
+        SortByTitle(posts)
+    }
+    })
+ 
+    function SortById(posts){
+        posts=posts.sort(function(a,b){
+            if(a['id']>b['id']){
+                return 1
+
+            }
+            else{
+                return -1
+            }
         })
         createPostsRows(posts);
-    })
+    }
+
+    function SortByTitle(posts){
+        posts=posts.sort(function(a,b){
+            if(a['title']>b['title']){
+                return 1
+            }
+            else{
+                return -1
+            }
+       })
+       createPostsRows(posts);
+    }
